@@ -67,9 +67,11 @@ header {
   background-image: url('../img/gospel.png');
   background-size: cover;
   background-position: center 60%;
-  background-attachment: fixed;
   background-repeat: no-repeat;
-
+  
+  @media (min-width: 768px) {
+    background-attachment: fixed;
+  }
   @media (min-width: 1440px) {
     background-size: 1280px;
   }
