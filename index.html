@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Rock Solid Christian Church</title>
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Animate.css (optional) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="p-3">
+  <header class="position-absolute">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+      <!-- Logo -->
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="assets/img/rock-solid-logo-light.png" alt="Rock Solid Logo">
+        <div>
+          <div>ROCK SOLID<br><small>Christian Church</small></div>
+        </div>
+      </a>
+      <!-- Centered Nav Pills -->
+      <nav class="nav-center position-relative">
+        <a class="nav-link" href="#">Plan A Visit</a>
+        <a class="nav-link" href="#">Who We Are</a>
+        <a class="nav-link" href="#">Connect</a>
+        <a class="nav-link" href="#">Ministries</a>
+        <a class="nav-link" href="#">Events</a>
+        <a class="nav-link" href="#">Media</a>
+        <a class="nav-link give" href="#">Give Online</a>
+      </nav>
+
+      <!-- Hamburger (mobile) -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav" aria-controls="mobileNav">
+        <span class="navbar-toggler-icon">
+          <span></span>
+        </span>
+      </button>
+
+      <!-- Account Link (desktop only) -->
+      <a href="#" class="create-account align-items-center">
+        <i class="bi bi-person me-1"></i> Create Account
+      </a>
+    </div>
+
+    <!-- Offcanvas Nav for Mobile -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileNav">
+      <div class="offcanvas-header">
+        <button class="navbar-toggler" type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas">
+          <span class="navbar-toggler-icon">
+            <span></span>
+          </span>
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="nav flex-column">
+          <li class="nav-item"><a class="nav-link" href="#">Plan A Visit</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Who We Are</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Connect</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Ministries</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Media</a></li>
+          <li class="nav-item"><a class="nav-link give" href="#">Give Online</a></li>
+          <li class="nav-item mt-3"><a class="nav-link" href="#"><i class="bi bi-person me-1"></i> Create Account</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main class="container-fluid">
+
+    <section class="hero-wrapper position-relative primary-radius">
+      <div class="hero-content container text-white text-center d-flex flex-column justify-content-center align-items-center">
+        <h1 class="" data-aos="fade-up" data-aos-delay="0">
+          We’re Glad You’re Here
+        </h1>
+        <p class="lead mb-4" data-aos="fade-up" data-aos-delay="200">
+          We are a thriving and diverse community of real<br>
+          people experiencing real life together.
+        </p>
+        <div class="d-flex btn-holder" data-aos="fade-up" data-aos-delay="400">
+          <a href="#" class="btn btn-light">Plan a Visit</a>
+          <a href="#" class="btn btn-secondary">About Us</a>
+        </div>
+      </div>
+
+      <div class="countdown-wrapper text-white text-center position-absolute"
+          data-day="1"
+          data-hour="0"
+          data-minute="0"
+          aria-live="polite">
+
+        <span class="label d-block">Next Service Starts In:</span>
+
+        <div id="service-timer" class="countdown d-inline-flex gap-1">
+          <span class="days">00</span>:
+          <span class="hours">00</span>:
+          <span class="minutes">00</span>:
+          <span class="seconds">00</span>
+        </div>
+        
+      </div>
+
+    </section>
+
+    <section id="intro">
+      <div class="container-fluid primary-content-width">
+        <div class="row">
+          <div class="col">
+            <p class="title">Welcome to Rock Solid</p>
+          </div>
+        </div>
+        <div class="row mb-4">
+          <!-- Text Block -->
+          <div class="col-md-5">
+            <h2>
+              Following the Holy Spirit, we exist
+              to create a movement of disciple-
+              <span style="display: inline-block;">making disciples.</span>
+            </h2>
+          </div>
+
+          <!-- Supporting Statement -->
+          <div class="col-md-5 offset-md-2">
+            <p class="supporting mb-0">
+              Rock Solid Church is committed to creating a movement of disciple-making disciples—men and women who reflect the diversity of our community, lived out in <span style="display: inline-block;">authentic unity.</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Full-width Image -->
+        <div class="text-center">
+          <img src="assets/img/jesus-holding-the-cross.png" alt="Artistic depiction of Jesus carrying the cross" class="img-fluid rounded-4 shadow-sm">
+        </div>
+      </div>
+    </section>
+
+    <section id="mission" class="position-relative primary-radius">
+      <svg class="section-arrow" width="138" height="35" viewBox="0 0 138 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_2982_2401)">
+          <path d="M134.85 0.5625C136.258 0.3975 137.316 0.2734 138 0L69.0018 -6.03201e-06C69.0018 -6.03201e-06 69.0002 6.36129 69 15.4868C69 14.2739 68.9999 13.1108 68.9999 12.0044L68.9982 -6.03233e-06L3.0598e-06 -1.20643e-05C0.684003 0.273388 1.742 0.397488 3.15 0.562488C6.89 1.00049 13.097 1.72709 21.322 6.31249C26.985 9.60989 31.477 14.0229 35.93 18.3975C44.4526 26.769 52.8315 35 68.9982 35C68.9994 29.729 69 24.5708 69 19.9048C69 24.5713 69.0006 29.7285 69.0018 35C85.1686 35 93.5474 26.769 102.07 18.3975C106.523 14.0229 111.015 9.6099 116.678 6.3125C124.903 1.7271 131.11 1.0005 134.85 0.5625Z" fill="#fff"></path>
+          <path d="M76.0232 8.82222L76.8037 9.60269C77.1341 9.93316 77.1341 10.4675 76.8037 10.7945L69.9728 17.6289C69.6423 17.9593 69.108 17.9593 68.781 17.6289L61.9501 10.798C61.6197 10.4675 61.6197 9.93316 61.9501 9.6062L62.7306 8.82574C63.0646 8.49175 63.6095 8.49878 63.9365 8.8398L67.9689 13.0726L67.9689 2.96871C67.9689 2.50113 68.3451 2.12496 68.8126 2.12496L69.9376 2.12496C70.4052 2.12496 70.7814 2.50113 70.7814 2.96871L70.7814 13.0726L74.8173 8.83628C75.1443 8.49175 75.6892 8.48472 76.0232 8.82222V8.82222Z" fill="#2e2320"></path>
+          </g>
+      </svg>
+      <div class="container-fluid primary-content-width position-relative z-1">
+        <!-- Mission Heading -->
+        <div class="mission-intro text-center">
+          <h2>Our Mission <span style="display: inline-block;">is Simple</span></h2>
+          <p class="lead">
+            <strong>The gospel is the good news of Jesus:</strong>
+            That Jesus lived a sinless life in my place, died the death that
+            I deserved...
+          </p>
+        </div>
+
+        <!-- Cards -->
+        <div class="mission-cards row justify-content-center">
+          <div class="col-lg-4">
+            <div class="mission-card">
+              <img src="assets/img/play-icon.png" class="mt-2 mb-5" alt="Play Icon"/>
+              <h5>Watch a Message</h5>
+              <p>Catch up on the latest and past weekend service messages anytime, anywhere.</p>
+              <a href="#">Catch Our Latest Message</a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="mission-card">
+              <img src="assets/img/pin-icon.png" class="mt-2 mb-5" alt="Pin Icon"/>
+              <h5>Find a Location</h5>
+              <p>Easily find a campus near you. Join us in person and get connected.</p>
+              <a href="#">Search Our Campuses</a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="mission-card">
+              <img src="assets/img/plane-icon.png" class="mt-2 mb-5" alt="Plane Icon"/>
+              <h5>Get Connected</h5>
+              <p>Stay connected and in the loop—sign up for updates, events, and ways to get involved.</p>
+              <a href="#">Contact Us</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gospel Section -->
+        <div class="row gospel">
+          <div class="col">
+            <p class="intro text-uppercase">Gospel</p>
+          </div>
+        </div>
+        <div class="row align-items-start gospel-content">
+          <div class="col-md-5">
+            <h4>The gospel is what should characterize us. It should be our identity: We are a gospel people.</h4>
+          </div>
+          <div class="col-md-5 offset-md-2">
+            <p>
+              <strong>The gospel is the good news of Jesus:</strong>
+              That Jesus lived a sinless life in my place, died the death that I deserved, and rose to life again.
+              And whoever believes in him has eternal life.
+            </p>
+          </div>
+        </div>
+
+        <!-- Gospel Image -->
+        <div class="parallax-wrapper text-center">
+          <div class="parallax gospel"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="visit" class="text-center">
+      <div class="container">
+        <div class="mx-auto content-wrapper">
+          <h2 class="fw-bold lh-sm" data-aos="fade-up">
+            ROCK SOLID CHURCH CONTINUES<br>
+            TO HOLD OUT <span class="text-highlight">LOVE</span> 
+            <span class="text-secondary">AND HOPE TO<br>THE ENTIRE WORLD.</span>
+          </h2>
+          <div class="mt-4" data-aos="fade-up" data-aos-delay="150">
+            <a href="#" class="btn bg-dark">Plan a Visit</a>
+          </div>
+        </div>
+      </div>
+      <img src="assets/img/heart-handshake.png" class="mt-5" alt="Love and Hope Icon"/>
+    </section>
+
+    <section id="volunteer">
+      <div class="container">
+        <div class="volunteer-intro text-center mb-4">
+          <h2 class="fw-bold">Find a Place <span style="display: inline-block;">to Volunteer</span></h2>
+          <p>Explore our ministries—find your place, grow in faith, and connect with a <span style="display: inline-block;">vibrant community!</span></p>
+        </div>
+
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#" class="d-block text-decoration-none" role="link" aria-label="Learn more about Small Groups">
+                <div class="img-holder"><img src="assets/img/volunteer/small-groups.jpg" alt="Small Groups"></div>
+                <p>Small Groups</p>
+              </a>
+            </div>
+            
+            <div class="swiper-slide">
+              <a href="#" class="d-block text-decoration-none" role="link" aria-label="Learn more about Prayer & Care ministry">
+                <div class="img-holder"><img src="assets/img/volunteer/prayer-and-care.jpg" alt="Prayer & Care"></div>
+                <p>Prayer & Care</p>
+              </a>
+            </div>
+
+            <div class="swiper-slide">
+              <a href="#" class="d-block text-decoration-none" role="link" aria-label="Learn more about Kids ministry">
+                <div class="img-holder"><img src="assets/img/volunteer/kids.jpg" alt="Kids Ministry"></div>
+                <p>Kids</p>
+              </a>
+            </div>
+
+            <div class="swiper-slide">
+              <a href="#" class="d-block text-decoration-none" role="link" aria-label="Learn more about Students ministry">
+                <div class="img-holder"><img src="assets/img/volunteer/students.jpg" alt="Students Ministry"></div>
+                <p>Students</p>
+              </a>
+            </div>
+
+            <div class="swiper-slide">
+              <a href="#" class="d-block text-decoration-none" role="link" aria-label="Learn more about Worship ministry">
+                <div class="img-holder"><img src="assets/img/volunteer/worship2.jpg" alt="Worship Ministry"></div>
+                <p>Worship</p>
+              </a>
+            </div>
+
+            <div class="swiper-slide">
+              <a href="#" class="d-block text-decoration-none" role="link" aria-label="Learn more about Men ministry">
+                <div class="img-holder"><img src="assets/img/volunteer/men.jpg" alt="Men's Ministry"></div>
+                <p>Men</p>
+              </a>
+            </div>
+
+            <div class="swiper-slide">
+              <a href="#" class="d-block text-decoration-none" role="link" aria-label="Learn more about Women ministry">
+                <div class="img-holder"><img src="assets/img/volunteer/women.jpg" alt="Women's Ministry"></div>
+                <p>Women</p>
+              </a>
+            </div>
+
+            <div class="swiper-slide">
+              <a href="#" class="d-block text-decoration-none" role="link" aria-label="Learn more about Small Groups">
+                <div class="img-holder"><img src="assets/img/volunteer/students.jpg" alt="Students"></div>
+                <p>Students</p>
+              </a>
+            </div>
+
+            <div class="swiper-slide">
+              <a href="#" class="d-block text-decoration-none" role="link" aria-label="Learn more about Small Groups">
+                <div class="img-holder"><img src="assets/img/volunteer/small-groups.jpg" alt="Small Groups"></div>
+                <p>Small Groups</p>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-pagination d-none"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="stories" class="bg-dark text-white primary-radius">
+      <div class="container-fluid primary-content-width">
+        <div class="row align-items-start">
+          
+          <!-- Text & CTA -->
+          <div class="col-lg-4">
+            <h2 class="fw-bold mb-3">Saved Lives Are<br>Changed Lives.</h2>
+            <p class="mb-4">Feature stories about how Rock Solid Church is making a difference in our city.</p>
+            <a href="#" class="btn mb-5">Share Your Story</a>
+          </div>
+          
+          <!-- Stories Grid -->
+          <div class="col-lg-7 offset-lg-1">
+            <div class="d-flex flex-column flex-md-row gap-3">
+              
+              <!-- Primary Story -->
+              <article class="flex-fill" data-aos="fade-up" data-aos-delay="150">
+                <a href="#" class="d-block text-decoration-none text-white">
+                  <div class="img-holder"><img src="assets/img/stories/joshua.jpg" alt="Joshua's Road to Peace"></div>
+                  <p>Joshua’s Road to Peace</p>
+                </a>
+              </article>
+              
+              <!-- Side Stories -->
+              <div class="d-flex flex-column gap-3" style="min-width: 160px;">
+                <article data-aos="fade-up" data-aos-delay="150">
+                  <a href="#" class="d-block text-decoration-none text-white">
+                    <div class="img-holder"><img src="assets/img/stories/by-any-means.jpg" alt="By Any Means Necessary"></div>
+                    <p>By Any Means Necessary</p>
+                  </a>
+                </article>
+                <article data-aos="fade-up" data-aos-delay="150">
+                  <a href="#" class="d-block text-decoration-none text-white">
+                    <div class="img-holder"><img src="assets/img/stories/holding-on-to-hope.jpg" alt="Holding on to Hope"></div>
+                    <p>Holding on to Hope</p>
+                  </a>
+                </article>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-white text-dark px-3 pb-3 primary-radius">
+    <div class="container-fluid primary-content-width">
+      <div class="row align-items-end mb-5">
+        <div class="col">
+          <div class="d-flex justify-content-end">
+            <button class="btn bg-dark mx-2">Plan a Visit</button>
+            <button class="btn btn-outline-dark">Log In</button>
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-start">
+        <!-- Left column -->
+        <div class="col-md-6">
+          <div class="mb-3 d-flex align-items-center brand">
+            <img src="assets/img/rock-solid-logo-dark.png" alt="Rock Solid Christian Church Dark Logo">
+            <div class="brand-name">ROCK SOLID<br><span>Christian Church</span></div>
+          </div>
+          <address class="small mb-3">
+            11340 W. Bell Road, Suite 200<br>
+            Surprise, AZ 85378<br>
+            <a href="tel:+10000000000" class="text-decoration-none">(000) 000-0000</a>
+          </address>
+
+          <div class="d-flex mb-4">
+              <a href="" class="btn btn-youtube rounded-circle"><i class="fa fab fa-youtube" target="_blank"></i></a>
+              <a href="" class="btn btn-youtube rounded-circle"><i class="fa fab fa-twitter" target="_blank"></i></a>
+              <a href="" class="btn btn-instagram rounded-circle"><i class="fa fab fa-instagram" target="_blank"></i></a>
+              <a href="" class="btn btn-facebook rounded-circle"><i class="fa fab fa-facebook" target="_blank"></i></a>
+          </div>
+        </div>
+
+        <!-- Right nav columns -->
+        <div class="col col-md-6 col-xl-4 offset-xl-2">
+          <div class="row">
+            <div class="col-6">
+              <h6 class="text-uppercase">Quick Links</h6>
+              <ul class="list-unstyled small">
+                <li><a href="#" class="text-decoration-none">About Rock Solid</a></li>
+                <li><a href="#" class="text-decoration-none">Locations</a></li>
+                <li><a href="#" class="text-decoration-none">Events</a></li>
+                <li><a href="#" class="text-decoration-none">Messages</a></li>
+                <li><a href="#" class="text-decoration-none">Ministries</a></li>
+                <li><a href="#" class="text-decoration-none">Serving</a></li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <h6 class="text-uppercase">Get in Touch</h6>
+              <ul class="list-unstyled small">
+                <li><a href="#" class="text-decoration-none">Plan a Visit Request</a></li>
+                <li><a href="#" class="text-decoration-none">Prayer</a></li>
+                <li><a href="#" class="text-decoration-none">Get Help</a></li>
+                <li><a href="#" class="text-decoration-none">Job Openings</a></li>
+                <li><a href="#" class="text-decoration-none">Report an Issue</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-left pt-3 mt-4">
+        &copy; 2025 <a href="#" class="text-link-highlight">Terms of Service</a> | 
+        <a href="#" class="text-link-highlight">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 2,
+      spaceBetween: 20,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 7,
+          spaceBetween: 30,
+        },
+      },
+    });
+  </script>
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <!-- Custom JS -->
+  <script src="assets/js/scripts.js"></script>
+
+</body>
+</html>

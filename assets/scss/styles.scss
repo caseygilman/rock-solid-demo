@@ -1,0 +1,19 @@
+// assets/scss/styles.scss
+
+// 1. Variables
+@import 'variables';
+
+// 2. Base styles (body, typography, resets)
+@import 'base';
+
+// 3. Layout (header, footer, grid tweaks)
+@import 'layout';
+
+// 4. Components (cards, buttons, animations, etc.)
+@import 'components';
+
+// 5. Utilities or overrides (optional)
+@import 'utilities';
+
+// 6. Theme (optional)
+@import 'theme';

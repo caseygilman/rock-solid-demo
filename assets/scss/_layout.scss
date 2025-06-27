@@ -1,0 +1,190 @@
+// ===== START HEADER ===== //
+header {
+  z-index: 1030;
+  left: 0; //position absolute temp if I have time to do fixed and address transparency issues
+}
+.navbar-brand {
+  img {
+    height: 54px;
+    width: 64px;
+    margin-right: 10px;
+  }
+}
+
+header nav {
+  display: none;
+  padding: 8px;
+  box-shadow: inset 0px 0px 2px 1px rgba(255, 255, 255, 0.2);
+  border-radius: 100px;
+  @media (min-width: 1440px) {
+    display: flex;
+  }
+}
+.nav-link {
+  margin: 0 5px;
+  padding: 10px;
+}
+.nav-link.give {
+  margin-left: 20px;
+  padding: 10px 16px;
+  border-radius: 100px;
+}
+.navbar-toggler {
+  @media (min-width: 1440px) {
+    display: none;
+  }
+}
+.navbar-toggler-icon {
+  position: relative;
+  height: 47px;
+  width: 47px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 100px;
+  span {
+    position: absolute;
+    top: 23px;
+    right: 0;
+    left: 0;
+    height: 3px;
+    width: 22px;
+    margin: auto;
+    background-color: #2e2320;
+  }
+  span:before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    right: 0;
+    left: 0;
+    height: 3px;
+    width: 22px;
+    margin: auto;
+    background-color: #2e2320;
+  }
+  span:after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    right: 0;
+    left: 0;
+    height: 3px;
+    width: 22px;
+    margin: auto;
+    background-color: #2e2320;
+  }
+}
+#mobileNav {
+  background-color: #2e2320;
+}
+.offcanvas-header {
+  position: relative;
+  height: 120px;
+  button {
+    position: absolute;
+    top: 58px;
+    right: 59px;
+    span span:before { content: none; }
+    span span { transform: rotate(45deg); }
+    span span:after {
+      top: 0;
+      transform: rotate(90deg);
+    }
+  }
+}
+// ===== END HEADER ===== //
+// ===== START HERO ===== //
+.countdown span {
+  width: 20px;
+  @media (min-width: 992px) {
+    width: 40px;
+  }
+}
+// ===== END HERO ===== //
+// ===== START INTRO ===== //
+#intro {
+  padding: 100px 0 150px;
+  h2 { margin-bottom: 20px; }
+  @media (min-width: 992px) {
+    h2 { margin-bottom: 0; }
+  }
+}
+
+#mission { z-index: 2; }
+.mission-intro {
+  max-width: 723px;
+  margin: 0 auto 70px;
+  .lead {
+    max-width: 551px;
+    margin: 0 auto;
+  }
+}
+.section-arrow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+.mission-cards { margin-bottom: 130px; }
+.mission-card {
+  margin-bottom: 20px;
+  h5 { margin-bottom: 30px; }
+  p {
+    max-width: 350px;
+    margin: 0 auto 50px;
+  }
+}
+.gospel-content {
+  margin-bottom: 30px;
+  h4 { margin-bottom: 30px; }
+}
+
+#visit:before {
+  content: none;
+  position: absolute;
+  bottom: -486px;
+  left: -200px;
+  height: 830px;
+  width: 781px;
+  background: url('../img/visit-bg-left.png') center center / cover no-repeat;
+}
+#visit {
+  position: relative;
+  z-index: 1;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  .container { padding-bottom: 70px; }
+  .content-wrapper { max-width: 1069px; }
+}
+#visit:after {
+  content: none;
+  position: absolute;
+  top: -860px;
+  right: -170px;
+  height: 1173px;
+  width: 690px;
+  background: url('../img/visit-bg-right.png') center center / cover no-repeat;
+}
+
+#volunteer {
+  padding: 0 0 100px;
+  .container { max-width: none; }
+  .volunteer-intro {
+    h2 { margin-bottom: 20px; }
+    p {
+      max-width: 480px;
+      margin: 0 auto;
+    }
+  }
+}
+.mySwiper {
+  padding-bottom: 50px;
+}
+.swiper .swiper-slide {
+  p { margin-top: 10px; }
+}
+
+#stories {
+  padding: 75px 0;
+}
