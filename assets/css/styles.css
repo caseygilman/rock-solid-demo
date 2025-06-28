@@ -439,6 +439,10 @@ footer .text-link-highlight:hover {
   color: rgba(235, 51, 0, 0.5);
 }
 
+body {
+  overflow-x: hidden;
+}
+
 header {
   z-index: 1030;
   left: 0;
