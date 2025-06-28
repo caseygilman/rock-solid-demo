@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="description" content="Rock Solid Christian Church is a diverse, Spirit-led community committed to disciple-making, authentic worship, and holding out love and hope to the world. Plan a visit, connect, and grow with us.">
   <title>Rock Solid Christian Church</title>
   <link rel="icon" href="assets/img/favicon.png" type="image/png">
   <!-- Bootstrap CSS -->
@@ -20,32 +21,33 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body class="p-3">
+  <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
   <header class="position-absolute">
     <div class="container-fluid d-flex justify-content-between align-items-center">
       <!-- Logo -->
-      <a class="navbar-brand d-flex align-items-center" href="#">
+      <a class="navbar-brand d-flex align-items-center" href="#" aria-label="Return to Rock Solid Church homepage">
         <img src="assets/img/rock-solid-logo-light.png" alt="Rock Solid Logo">
         <div>
           <div>ROCK SOLID<br><small>Christian Church</small></div>
         </div>
       </a>
       <!-- Centered Nav Pills -->
-      <nav class="nav-center position-relative">
+      <nav class="nav-center position-relative" role="navigation" aria-label="Main Navigation">
         <a class="nav-link" href="#">Plan A Visit</a>
         <a class="nav-link" href="#">Who We Are</a>
         <a class="nav-link" href="#">Connect</a>
         <a class="nav-link" href="#">Ministries</a>
         <a class="nav-link" href="#">Events</a>
         <a class="nav-link" href="#">Media</a>
-        <a class="nav-link give" href="#">Give Online</a>
+        <a class="nav-link give" href="#" aria-label="Give online to Rock Solid Church">Give Online</a>
       </nav>
 
       <!-- Hamburger (mobile) -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav" aria-controls="mobileNav">
-        <span class="navbar-toggler-icon">
-          <span></span>
-        </span>
+      <button class="navbar-toggler" type="button" aria-label="Toggle mobile navigation"
+        data-bs-toggle="offcanvas" data-bs-target="#mobileNav" aria-controls="mobileNav">
+        <span class="navbar-toggler-icon"></span>
       </button>
+
 
       <!-- Account Link (desktop only) -->
       <a href="#" class="create-account align-items-center">
@@ -56,13 +58,13 @@
     <!-- Offcanvas Nav for Mobile -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileNav">
       <div class="offcanvas-header">
-        <button class="navbar-toggler" type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas">
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close menu">
           <span class="navbar-toggler-icon">
             <span></span>
           </span>
         </button>
       </div>
-      <div class="offcanvas-body">
+      <div class="offcanvas-body" role="navigation" aria-label="Mobile Navigation">
         <ul class="nav flex-column">
           <li class="nav-item"><a class="nav-link" href="#">Plan A Visit</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Who We Are</a></li>
@@ -70,7 +72,7 @@
           <li class="nav-item"><a class="nav-link" href="#">Ministries</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Media</a></li>
-          <li class="nav-item"><a class="nav-link give" href="#">Give Online</a></li>
+          <li class="nav-item"><a class="nav-link give" href="#" aria-label="Give online to Rock Solid Church">Give Online</a></li>
           <li class="nav-item mt-3"><a class="nav-link" href="#"><i class="bi bi-person me-1"></i> Create Account</a></li>
         </ul>
       </div>
@@ -89,8 +91,8 @@
           people experiencing real life together.
         </p>
         <div class="d-flex btn-holder" data-aos="fade-up" data-aos-delay="400">
-          <a href="#" class="btn btn-light">Plan a Visit</a>
-          <a href="#" class="btn btn-secondary">About Us</a>
+          <a href="#visit" class="btn btn-light" role="button" aria-label="Plan a visit to Rock Solid Church">Plan a Visit</a>
+          <a href="#about" class="btn btn-secondary" role="button" aria-label="Learn more about Rock Solid Church">About Us</a>
         </div>
       </div>
 
@@ -319,7 +321,7 @@
           <div class="col-lg-4">
             <h2 class="fw-bold mb-3">Saved Lives Are<br>Changed Lives.</h2>
             <p class="mb-4">Feature stories about how Rock Solid Church is making a difference in our city.</p>
-            <a href="#" class="btn mb-5">Share Your Story</a>
+            <a href="#share-story" class="btn mb-5" role="button" aria-label="Share your story with Rock Solid Church">Share Your Story</a>
           </div>
           
           <!-- Stories Grid -->
@@ -364,8 +366,8 @@
       <div class="row align-items-end mb-5">
         <div class="col">
           <div class="d-flex justify-content-end">
-            <button class="btn bg-dark mx-2">Plan a Visit</button>
-            <button class="btn btn-outline-dark">Log In</button>
+            <button class="btn bg-dark mx-2" type="button" aria-label="Plan a visit to Rock Solid Church">Plan a Visit</button>
+            <button class="btn btn-outline-dark" type="button" aria-label="Log in to Rock Solid Church account">Log In</button>
           </div>
         </div>
       </div>
@@ -386,7 +388,9 @@
               <a href="" class="btn btn-youtube rounded-circle"><i class="fa fab fa-youtube" target="_blank"></i></a>
               <a href="" class="btn btn-youtube rounded-circle"><i class="fa fab fa-twitter" target="_blank"></i></a>
               <a href="" class="btn btn-instagram rounded-circle"><i class="fa fab fa-instagram" target="_blank"></i></a>
-              <a href="" class="btn btn-facebook rounded-circle"><i class="fa fab fa-facebook" target="_blank"></i></a>
+              <a href="#" class="btn btn-facebook rounded-circle" aria-label="Visit our Facebook page">
+                <i class="fa fab fa-facebook"></i>
+              </a>
           </div>
         </div>
 
