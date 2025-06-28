@@ -84,6 +84,11 @@ header nav {
     position: absolute;
     top: 58px;
     right: 59px;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    width: auto;
+    height: auto;
     span span:before { content: none; }
     span span { transform: rotate(45deg); }
     span span:after {
@@ -141,7 +146,7 @@ header nav {
 }
 
 #visit:before {
-  content: none;
+  content: "";
   position: absolute;
   bottom: -486px;
   left: -200px;
@@ -158,7 +163,7 @@ header nav {
   .content-wrapper { max-width: 1069px; }
 }
 #visit:after {
-  content: none;
+  content: "";
   position: absolute;
   top: -860px;
   right: -170px;
