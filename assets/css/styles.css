@@ -439,10 +439,6 @@ footer .text-link-highlight:hover {
   color: rgba(235, 51, 0, 0.5);
 }
 
-body {
-  overflow-x: hidden;
-}
-
 header {
   z-index: 1030;
   left: 0;
@@ -617,16 +613,6 @@ header nav {
   margin-bottom: 30px;
 }
 
-#visit:before {
-  content: "";
-  position: absolute;
-  bottom: -486px;
-  left: -200px;
-  height: 830px;
-  width: 781px;
-  background: url("../img/visit-bg-left.png") center center/cover no-repeat;
-}
-
 #visit {
   position: relative;
   z-index: 1;
@@ -638,16 +624,6 @@ header nav {
 }
 #visit .content-wrapper {
   max-width: 1069px;
-}
-
-#visit:after {
-  content: "";
-  position: absolute;
-  top: -860px;
-  right: -170px;
-  height: 1173px;
-  width: 690px;
-  background: url("../img/visit-bg-right.png") center center/cover no-repeat;
 }
 
 #volunteer {
