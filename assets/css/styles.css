@@ -532,6 +532,11 @@ header nav {
   position: absolute;
   top: 58px;
   right: 59px;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  width: auto;
+  height: auto;
 }
 .offcanvas-header button span span:before {
   content: none;
