@@ -609,7 +609,7 @@ header nav {
 }
 
 #visit:before {
-  content: none;
+  content: "";
   position: absolute;
   bottom: -486px;
   left: -200px;
@@ -632,7 +632,7 @@ header nav {
 }
 
 #visit:after {
-  content: none;
+  content: "";
   position: absolute;
   top: -860px;
   right: -170px;
@@ -758,6 +758,12 @@ header nav {
   max-width: 984px;
 }
 
+/* WebP override for supported browsers */
+@supports (background-image: url("image.webp")) {
+  .hero-wrapper {
+    background-image: url("../img/hero.webp");
+  }
+}
 .countdown-wrapper {
   bottom: 24px;
 }
