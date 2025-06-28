@@ -33,6 +33,12 @@ header {
     max-width: 984px;
   }
 }
+/* WebP override for supported browsers */
+@supports (background-image: url("image.webp")) {
+  .hero-wrapper {
+    background-image: url('../img/hero.webp');
+  }
+}
 
 .countdown-wrapper {
   bottom: 24px;
