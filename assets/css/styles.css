@@ -418,7 +418,7 @@ footer address a {
 footer address a:hover {
   color: rgb(235, 51, 0);
 }
-footer h6 {
+footer .footer-links-heading {
   font-weight: 700;
   font-size: 20px;
   line-height: 32px;
