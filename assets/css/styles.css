@@ -221,7 +221,7 @@ p.supporting {
   font-weight: 700;
 }
 
-.mission-card h5 {
+.mission-card h3 {
   font-weight: 700;
   font-size: 28px;
   line-height: 100%;
@@ -594,6 +594,7 @@ header nav {
   right: 0;
   left: 0;
   margin: auto;
+  vertical-align: top;
 }
 
 .mission-cards {
